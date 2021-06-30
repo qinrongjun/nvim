@@ -86,8 +86,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>ft  <Plug>(coc-format-selected)
+nmap <leader>ft  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -166,3 +166,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+
+let g:coc_snippet_next = '<leader><tab>'
+let g:coc_snippet_prev = '<leader>q'

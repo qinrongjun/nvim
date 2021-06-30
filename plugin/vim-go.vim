@@ -13,12 +13,12 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
 let g:godef_split=2
-let go_addtags_transform="camelcase"
+let g:go_addtags_transform="camelcase"
+let g:go_gopls_enabled = 0
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
-autocmd FileType go let g:UltiSnipsEnableSnipMate = 0
 
 

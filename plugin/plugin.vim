@@ -1,7 +1,6 @@
 " ---------------------------------------------------------- 
 " 插件管理
 call plug#begin('~/.vim/plugged')
-Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'Lokaltog/vim-easymotion'
@@ -16,6 +15,11 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lifepillar/vim-solarized8', { 'dir': '~/.config/nvim/colors/solarized8' }
+Plug 'captbaritone/better-indent-support-for-php-with-html'
+Plug '2072/PHP-Indenting-for-VIm'
+Plug 'junegunn/seoul256.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 

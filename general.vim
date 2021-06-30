@@ -1,4 +1,3 @@
-" ----------------------------------------------------------
 " vim配置 
 " 定义快捷键的前缀，即 <Leader>
 let mapleader=","
@@ -74,11 +73,9 @@ nnoremap <Leader>lw <C-W>l
 nnoremap <Leader>kw <C-W>k
 " 跳转至下方的子窗口
 nnoremap <Leader>jw <C-W>j
-
-" ---------------------------------------------------------
+" session选项
 set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize"
 " 保存快捷键
 map <leader>ss :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>
 " 恢复快捷键
 map <leader>rs :source my.vim<cr> :rviminfo my.viminfo<cr>
-"
