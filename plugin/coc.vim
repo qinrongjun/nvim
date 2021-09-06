@@ -168,4 +168,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 
 let g:coc_snippet_next = '<leader><tab>'
-let g:coc_snippet_prev = '<leader>q'
+let g:coc_snippet_prev = '<leader><s-tab>'
