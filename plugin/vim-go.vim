@@ -14,7 +14,6 @@ let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
 let g:godef_split=2
 let g:go_addtags_transform="camelcase"
-let g:go_gopls_enabled = 0
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>

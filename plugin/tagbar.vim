@@ -3,32 +3,32 @@ nmap <Leader>tl :TagbarToggle<CR>
 let g:tagbar_width = 32
 " go
 let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'i:imports:1',
-        \ 'c:constants',
-        \ 'v:variables',
-        \ 't:types',
-        \ 'n:interfaces',
-        \ 'w:fields',
-        \ 'e:embedded',
-        \ 'm:methods',
-        \ 'r:constructor',
-        \ 'f:functions'
-    \ ],
-    \ 'sro' : '.',
-    \ 'kind2scope' : {
-        \ 't' : 'ctype',
-        \ 'n' : 'ntype'
-    \ },
-    \ 'scope2kind' : {
-        \ 'ctype' : 't',
-        \ 'ntype' : 'n'
-    \ },
-    \ 'ctagsbin'  : 'gotags',
-    \ 'ctagsargs' : '-sort -silent'
-\ }
+            \ 'ctagstype' : 'go',
+            \ 'kinds'     : [
+                \ 'p:package',
+                \ 'i:imports:1',
+                \ 'c:constants',
+                \ 'v:variables',
+                \ 't:types',
+                \ 'n:interfaces',
+                \ 'w:fields',
+                \ 'e:embedded',
+                \ 'm:methods',
+                \ 'r:constructor',
+                \ 'f:functions'
+                \ ],
+                \ 'sro' : '.',
+                \ 'kind2scope' : {
+                    \ 't' : 'ctype',
+                    \ 'n' : 'ntype'
+                    \ },
+                    \ 'scope2kind' : {
+                        \ 'ctype' : 't',
+                        \ 'ntype' : 'n'
+                        \ },
+                        \ 'ctagsbin'  : 'gotags',
+                        \ 'ctagsargs' : '-sort -silent'
+                        \ }
 
 " c
 let g:tagbar_type_c = {
@@ -46,21 +46,35 @@ let g:tagbar_type_c = {
                 \ 'f:functions',
                 \ 'm:members:0:0',
                 \ 'v:variables:0:0'
-            \ ],
-            \ 'sro'        : '::',
-            \ 'kind2scope' : {
-                \ 'g' : 'enum',
-                \ 'n' : 'namespace',
-                \ 'c' : 'class',
-                \ 's' : 'struct',
-                \ 'u' : 'union'
-            \ },
-            \ 'scope2kind' : {
-                \ 'enum'      : 'g',
-                \ 'namespace' : 'n',
-                \ 'class'     : 'c',
-                \ 'struct'    : 's',
-                \ 'union'     : 'u'
-            \ }
-        \ }
+                \ ],
+                \ 'sro'        : '::',
+                \ 'kind2scope' : {
+                    \ 'g' : 'enum',
+                    \ 'n' : 'namespace',
+                    \ 'c' : 'class',
+                    \ 's' : 'struct',
+                    \ 'u' : 'union'
+                    \ },
+                    \ 'scope2kind' : {
+                        \ 'enum'      : 'g',
+                        \ 'namespace' : 'n',
+                        \ 'class'     : 'c',
+                        \ 'struct'    : 's',
+                        \ 'union'     : 'u'
+                        \ }
+                        \ }
 
+" ts
+let g:tagbar_type_typescript = {
+  \ 'ctagstype': 'typescript',
+  \ 'kinds': [
+    \ 'c:classes',
+    \ 'n:modules',
+    \ 'f:functions',
+    \ 'v:variables',
+    \ 'v:varlambdas',
+    \ 'm:members',
+    \ 'i:interfaces',
+    \ 'e:enums',
+  \ ]
+\ }
