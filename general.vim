@@ -56,7 +56,7 @@ vnoremap <Leader>y "+y
 nmap <Leader>p "+p
 
 " 窗口切换
-noremap <leader>hw <C-W>r
+noremap <leader>hw <C-W>h
 noremap <leader>lw <C-W>l
 noremap <leader>jw <C-W>j
 noremap <leader>kw <C-W>k
