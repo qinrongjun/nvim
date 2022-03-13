@@ -51,14 +51,26 @@ set guioptions-=m
 set guioptions-=T
 " 高亮当前行
 set cursorline
-" 设置快捷键将选中文本块复制至系统剪贴板
+" 粘贴与复制
 vnoremap <Leader>y "+y
-" 设置快捷键将系统剪贴板内容粘贴至vim
 nmap <Leader>p "+p
+
+" 窗口切换
+noremap <leader>hw <C-W>r
+noremap <leader>lw <C-W>l
+noremap <leader>jw <C-W>j
+noremap <leader>kw <C-W>k
+noremap <leader>nw <C-W><C-W>
+
+" 保存与退出
+nmap <Leader>ww :w<CR>
+nmap <Leader>wa :wa<CR>
+nmap <Leader>wq :wa<CR>:q<CR>
+nmap <Leader>qa :qa!<CR>
+
+
 " session选项
 set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize"
-" 保存快捷键
 map <leader>ss :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>
-" 恢复快捷键
 map <leader>rs :source my.vim<cr> :rviminfo my.viminfo<cr>
 
