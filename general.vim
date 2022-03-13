@@ -60,7 +60,6 @@ noremap <leader>hw <C-W>h
 noremap <leader>lw <C-W>l
 noremap <leader>jw <C-W>j
 noremap <leader>kw <C-W>k
-noremap <leader>nw <C-W><C-W>
 
 " 保存与退出
 nmap <Leader>ww :w<CR>
